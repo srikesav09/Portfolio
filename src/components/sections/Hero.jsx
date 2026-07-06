@@ -1,80 +1,131 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";
+import {FaGithub, FaLinkedin,FaEnvelope } from "react-icons/fa";
+import {motion} from "framer-motion";
+import Button from "../ui/Button";
+import Container from "../ui/Container";
+import ProfileCard from "../hero/ProfileCard";
+import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 export default function Hero() {
+
+  const techStack = [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Express",
+    "AWS",
+    "Java"
+];
+
   return (
-    <section className="min-h-screen flex items-center bg-slate-950 pt-20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <section
+      id="home"
+      className="min-h-screen flex items-center pt-20 bg-slate-950"
+    >
+      <Container className="grid md:grid-cols-2 gap-12 items-center">
+      <motion.div
+        initial={{opacity: 0, x: -40}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 0.8 }}
+      >
+        <p className=" text-lg mb-2 font-medium">
+          Hello, I'm
+        </p>
 
-        {/* Left Side */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="text-blue-400 text-lg mb-2">
-            👋 Hello, I'm
-          </p>
+        <h1 className="text-6xl md:text-7xl font-extrabold leading-tight">
+          <span className="bg-linear-to-r from-blue-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+              Srikesav M
+          </span>
+        </h1>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Srikesav M
-          </h1>
-
-          <h2 className="text-2xl md:text-3xl text-slate-300 mt-4">
-            Full Stack Developer
+        <h2 className="text-2xl md:text-3xl text-slate-300 mt-4">
+            Aspiring Software Engineer
           </h2>
 
-          <p className="text-slate-400 mt-6 leading-8 max-w-xl">
-            Passionate about building scalable web applications,
-            solving real-world problems, and exploring cloud
-            technologies with AWS. Currently pursuing B.Tech in
-            Information Technology at PSG College of Technology.
+          <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
+            I enjoy building scalable full-stack applications and solving real-world problems.
+            Currently pursuing B.Tech in Information Technology at PSG College of Technology,
+            while strengthening my skills in React, Node.js, MongoDB, Data Structures, and AWS.
           </p>
 
-          <div className="flex gap-4 mt-8">
-            <button className="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg font-medium transition">
-              View Projects
-            </button>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="flex flex-wrap gap-4 mt-8"
+          >
+            <Button>
+              View Projects 
+              <FaArrowRight />
+            </Button>
 
-            <button className="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg transition">
-              Contact Me
-            </button>
-          </div>
+            <Button variant="outline">
+                <FaDownload />
+                Resume
+            </Button>
+          </motion.div>
 
           <div className="flex gap-6 mt-10 text-2xl">
-            <a href="#">
-              <FaGithub className="hover:text-blue-400 transition" />
+            <a
+              href="https://github.com/srikesav09"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all">
+              <FaGithub />
             </a>
 
-            <a href="#">
-              <FaLinkedin className="hover:text-blue-400 transition" />
+            <a
+              href="https://www.linkedin.com/in/srikesav-m-53446b324/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all"
+            >
+              <FaLinkedin />
             </a>
 
-            <a href="#">
-              <FaEnvelope className="hover:text-blue-400 transition" />
+            <a
+              href="mailto:srikesav77@gmail.com"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all"
+            >
+              <FaEnvelope />
             </a>
           </div>
-        </motion.div>
 
-        {/* Right Side */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="flex justify-center"
-        >
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-blue-600 blur-3xl opacity-30 animate-pulse"></div>
-
-            <img
-              src="/images/profile.png"
-              alt="Profile"
-              className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-blue-500 shadow-2xl"
-            />
+          <div className="mt-10 flex flex-wrap gap-3">
+            {techStack.map((tech) => (
+                <span
+                    key={tech}
+                    className="
+                        rounded-full
+                        border
+                        border-slate-700
+                        bg-slate-900
+                        px-4
+                        py-2
+                        text-sm
+                        text-slate-300
+                        hover:border-blue-500
+                        hover:text-blue-400
+                        transition-all
+                    "
+                >
+                    {tech}
+                </span>
+            ))}
           </div>
-        </motion.div>
 
-      </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: 40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center"
+      >
+        <div className="relative">
+          <ProfileCard />
+        </div> 
+      </motion.div>
+      </Container>
     </section>
   );
 }

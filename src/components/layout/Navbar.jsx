@@ -1,11 +1,24 @@
-import { useState } from "react";
-import { Menu, X } from "react-icons/fa6";
+import {useState, useEffect} from "react";
+import {FaBars, FaTimes} from "react-icons/fa";
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const navLinks = [
-    "About",
+  useEffect(()=>{
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return ()=> window.removeEventListener("scroll",handleScroll);
+  },[]);
+
+  const navItems = [
+    "My Journey",
     "Skills",
     "Projects",
     "Experience",
@@ -13,50 +26,88 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-
-        <h1 className="text-2xl font-bold tracking-wide">
+    <header
+      className={
+        `
+          fixed
+          top-0
+          w-full
+          z-50
+          transition-all
+          duration-300
+          ${
+            scrolled
+            ? "bg-slate-950/90 backdrop-blur-md border-b border-slate-800"
+            :"bg-transparent"
+          }
+        `}
+    >
+      <Container
+        className={
+          `
+            flex
+            items-center
+            justify-between
+            h-20
+          `
+        }
+      >
+        <a
+          href="#home"
+          className="text-2xl font-bold hover:text-blue-400 transition-transform hover:scale-105"
+        >
           <span className="text-blue-500">&lt;</span>
           Srikesav M
           <span className="text-blue-500">/&gt;</span>
-        </h1>
+        </a>
 
-        <ul className="hidden md:flex gap-8">
-          {navLinks.map((item) => (
-            <li
-              key={item}
-              className="cursor-pointer text-slate-300 hover:text-blue-400 transition"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+        <nav className="hidden md:flex items-center gap-8">
+          {navItems.map((items)=>{
+            return (
+              <a
+                key={items}
+                href={`#${items.toLowerCase()}`}
+                className="text-slate-300 hover:text-blue-400 hover:scale-105 transition-colors"
+              >
+                {items}
+              </a>
+          );})}
+        </nav>
 
-        <button className="hidden md:block px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 transition">
-          Resume
-        </button>
+        <div className="hidden md:block">
+          <Button href="./public/_RESUME_SRIKESAV.pdf">
+            Resume
+          </Button>
+        </div>
 
         <button
-          className="md:hidden"
-          onClick={() => setOpen(!open)}
+          className="md:hidden text-2xl"
+          onClick={()=> setMenuOpen(!menuOpen)}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
-      </div>
 
-      {open && (
+      </Container>
+
+      {menuOpen && (
         <div className="md:hidden bg-slate-900 border-t border-slate-800">
-          {navLinks.map((item) => (
-            <div
-              key={item}
-              className="px-6 py-4 border-b border-slate-800 hover:bg-slate-800 cursor-pointer"
-            >
-              {item}
-            </div>
-          ))}
+          {navItems.map((items)=>{
+            return (
+              <a
+                key={items}
+                href={`#${items.toLowerCase()}`}
+                className="block px-6 py-4 hover:bg-slate-800 transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {items}
+              </a>
+          );})}
+          <div className="p-6">
+            <Button href="/public/_RESUME_SRIKESAV.pdf">Resume</Button>
+          </div>
         </div>
-      )}
-    </nav>
-  );
+      )
+      }
+    </header>
+  )
 }

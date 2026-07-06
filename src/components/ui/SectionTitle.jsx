@@ -14,13 +14,13 @@ export default function SectionTitle({
         `
       }
     >
-      
       <h2
         className={
           `
             text-3xl
-            md: text-5xl
+            md:text-5xl
             font-bold
+            mt-2
           `
         }
       >
