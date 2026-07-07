@@ -1,33 +1,31 @@
-const dashboard = [
+const profile = [
   {
     title: "Education",
     icon: "🎓",
     items: [
       "PSG College of Technology",
       "B.Tech Information Technology",
+      "3rd Year",
       "CGPA: 8.20"
     ]
   },
   {
-    title: "Current Focus",
-    icon: "📈",
+    title: "Currently Learning",
+    icon: "🚀",
     items: [
-      "Data Structure",
+      "AWS Cloud",
       "Linux",
-      "Cyber Security",
-      "React",
-      "Node.js",
       "Deployment",
-      "AWS"
+      "Cyber security"
     ]
   },
   {
-    title: "Career Goal",
+    title: "Career Goals",
     icon: "🎯",
     items: [
-      "No Regrets",
       "Software Engineer",
-      "Product Companies"
+      "Product-Based Companies",
+      "Cloud Development"
     ]
   },
   {
@@ -35,10 +33,10 @@ const dashboard = [
     icon: "💼",
     items: [
       "Internships",
-      "Full Stack Development",
-      "Cloud Projects"
+      "Full Stack Projects",
+      "Backend Development"
     ]
   }
 ];
 
-export default dashboard;
+export default profile;

@@ -1,8 +1,8 @@
 import {FaGithub, FaLinkedin,FaEnvelope } from "react-icons/fa";
 import {motion} from "framer-motion";
-import Button from "../ui/Button";
-import Container from "../ui/Container";
-import ProfileCard from "../hero/ProfileCard";
+import Button from "../common/Button";
+import Container from "../common/Container";
+import ProfileCard from "./ProfileCard";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 export default function Hero() {

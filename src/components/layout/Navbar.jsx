@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
-import Button from "../ui/Button";
-import Container from "../ui/Container";
+import Button from "../common/Button";
+import Container from "../common/Container";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

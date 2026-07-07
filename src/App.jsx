@@ -1,10 +1,12 @@
 import Navbar from "./components/layout/Navbar";
-import Hero from "./components/sections/Hero";
-import Stats from "./components/sections/Stats";
-import Journey from "./components/sections/Journey";
-import Skills from "./components/sections/Skills";
-import Projects from "./components/sections/Projects";
-import Dashboard from "./components/sections/Dashboard";
+import Hero from "./components/hero/Hero";
+import Stats from "./components/stats/Stats";
+import Journey from "./components/journey/Journey";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/projects";
+import Profile from "./components/profile/Profile";
+import Certifications from "./components/certifications/Certifications";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <Journey />
       <Skills />
       <Projects />
-      <Dashboard />
+      <Profile />
+      <Certifications />
+      <Contact />
     </>
   );
 }

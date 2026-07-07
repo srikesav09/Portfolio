@@ -1,6 +1,6 @@
-import Container from "../ui/Container";
-import SectionTitle from "../ui/SectionTitle";
-import SkillCategory from "../ui/SkillCategory";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
+import SkillCategory from "./SkillCategory";
 
 import skills from "../../data/skills";
 

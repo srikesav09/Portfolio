@@ -1,6 +1,6 @@
-import Container from "../ui/Container";
-import SectionTitle from "../ui/SectionTitle";
-import TimelineItem from "../ui/TimelineItem";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
+import TimelineItem from "./TimelineItem";
 
 import journey from "../../data/journey";
 

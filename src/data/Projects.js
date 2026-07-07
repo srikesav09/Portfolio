@@ -2,53 +2,82 @@ const projects = [
   {
     id: 1,
     title: "Campus Lost & Found Portal",
-    category: "Full Stack",
+    category: "Full Stack Web Application",
+    image: "/images/projects/campus.png",
+
     description:
-      "A full-stack web application for reporting, searching, and managing lost and found items within a campus.",
-    image: "/images/projects/lost-found.png",
-    tech: [
+      "A full-stack platform that enables students to report, search, and recover lost items within the campus through a clean and responsive interface.",
+
+    technologies: [
       "React",
+      "Tailwind CSS",
       "Node.js",
-      "Express",
+      "Express.js",
       "MongoDB",
-      "Tailwind"
     ],
+
+    features: [
+      "User Authentication",
+      "Search & Filters",
+      "REST API",
+      "Responsive Design",
+      "MongoDB Integration",
+    ],
+
     github: "https://www.github.com/srikesav09/",
     live: "https://campuslostandfoundportal.netlify.app/",
-    featured: true
   },
 
   {
     id: 2,
     title: "Student CRUD API",
-    category: "Backend",
+    category: "Backend API",
+    image: "/images/projects/student.png",
+
     description:
-      "RESTful API implementing CRUD operations with Express.js and MongoDB.",
-    image: "/images/projects/student-api.png",
-    tech: [
+      "RESTful backend API supporting complete CRUD operations with Express.js and MongoDB.",
+
+    technologies: [
       "Node.js",
-      "Express",
-      "MongoDB"
+      "Express.js",
+      "MongoDB",
     ],
+
+    features: [
+      "REST Architecture",
+      "CRUD Operations",
+      "MongoDB",
+      "Express Routing",
+    ],
+
     github: "https://www.github.com/srikesav09/student-crud-api/",
-    live: "https://student-crud-api-4lpk.onrender.com/"
+    live: "https://student-crud-api-4lpk.onrender.com/",
   },
 
   {
     id: 3,
     title: "SilentSOS",
     category: "Embedded Systems",
+    image: "/images/projects/sos.png",
+
     description:
-      "Offline emergency alert system built using Raspberry Pi Pico and MicroPython.",
-    image: "/images/projects/silent-sos.png",
-    tech: [
+      "Offline emergency alert system built using Raspberry Pi Pico and MicroPython for reliable emergency signaling without internet connectivity.",
+
+    technologies: [
       "MicroPython",
       "Raspberry Pi Pico",
-      "Sensors"
+      "Embedded Systems",
     ],
-    github: "",
-    live: ""
-  }
+
+    features: [
+      "Offline Alerts",
+      "Sensor Integration",
+      "MicroPython",
+    ],
+
+    github: "https://www.github.com/srikesav09/",
+    live: "",
+  },
 ];
 
 export default projects;

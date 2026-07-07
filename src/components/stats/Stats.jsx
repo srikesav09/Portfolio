@@ -1,6 +1,6 @@
-import Container from "../ui/Container";
-import SectionTitle from "../ui/SectionTitle";
-import StatCard from "../ui/StatCard";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
+import StatCard from "./StatCard";
 
 import stats from "../../data/stats";
 
