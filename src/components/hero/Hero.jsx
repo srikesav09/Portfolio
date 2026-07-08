@@ -8,15 +8,6 @@ import SectionWrapper from "../common/SectionWrapper";
 
 export default function Hero() {
 
-  const techStack = [
-    "React",
-    "Node.js",
-    "MongoDB",
-    "Express",
-    "AWS",
-    "Java"
-];
-
   return (
     <SectionWrapper>
       <section
@@ -57,13 +48,13 @@ export default function Hero() {
               className="flex flex-wrap gap-4 mt-8"
             >
               <Button href={"#projects"}>
-                View Projects
-                <FaArrowRight />
+                View My Work
+                <FaArrowRight aria-hidden="true"/>
               </Button>
 
               <Button variant="outline" href={"./resume.pdf"}>
-                  <FaDownload />
-                  Resume
+                  <FaDownload aria-label="Download" aria-hidden="true"/>
+                  Download Resume
               </Button>
             </motion.div>
 
@@ -73,7 +64,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all">
-                <FaGithub />
+                <FaGithub aria-label="GitHub" aria-hidden="true"/>
               </a>
 
               <a
@@ -82,39 +73,17 @@ export default function Hero() {
                 rel="noreferrer"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all"
               >
-                <FaLinkedin />
+                <FaLinkedin aria-label="Linkedin" aria-hidden="true"/>
               </a>
-
               <a
-                href="mailto:srikesav77@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=srikesav77@gmail.com"
+                target="_blank"
+                rel="noreferrer"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 hover:border-blue-500 hover:bg-slate-800 transition-all"
               >
-                <FaEnvelope />
+                <FaEnvelope aria-label="Email" aria-hidden="true"/>
               </a>
             </div>
-
-            {/*<div className="mt-10 flex flex-wrap gap-3">
-              {techStack.map((tech) => (
-                  <span
-                      key={tech}
-                      className="
-                          rounded-full
-                          border
-                          border-slate-700
-                          bg-slate-900
-                          px-4
-                          py-2
-                          text-sm
-                          text-slate-300
-                          hover:border-blue-500
-                          hover:text-blue-400
-                          transition-all
-                      "
-                  >
-                      {tech}
-                  </span>
-              ))}
-            </div> */}
 
         </motion.div>
 

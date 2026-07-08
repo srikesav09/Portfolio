@@ -56,7 +56,6 @@ export default function Contact() {
 
           <div className="mt-16 grid gap-10 lg:grid-cols-2">
             
-            {/* Form Block */}
             <form
               ref={form}
               onSubmit={sendEmail}
@@ -143,9 +142,8 @@ export default function Contact() {
               </Button>
             </form>
 
-            {/* Right Info & Social Connections Block */}
             <div className="flex flex-col justify-center">
-              <h3 className="text-3xl font-semibold bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent">
+              <h3 className="text-3xl font-semibold bg-linear-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent">
                 Let's Build Something Great Together
               </h3>
 
@@ -155,7 +153,6 @@ export default function Contact() {
                 developers who love building impactful software.
               </p>
 
-              {/* Enhanced Interactive Social Links */}
               <div className="mt-10 space-y-4">
                 <a
                   href="https://github.com/srikesav09"
@@ -181,7 +178,7 @@ export default function Contact() {
                     hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
                   "
                 >
-                  <FaGithub className="text-2xl transition-transform duration-300 group-hover:scale-110" />
+                  <FaGithub aria-label="GitHub" aria-hidden="true" className="text-2xl transition-transform duration-300 group-hover:scale-110" />
                   <span className="font-medium">GitHub</span>
                 </a>
 
@@ -209,12 +206,12 @@ export default function Contact() {
                     hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
                   "
                 >
-                  <FaLinkedin className="text-2xl transition-transform duration-300 group-hover:scale-110" />
+                  <FaLinkedin aria-label="Linkedin" aria-hidden="true" className="text-2xl transition-transform duration-300 group-hover:scale-110" />
                   <span className="font-medium">LinkedIn</span>
                 </a>
 
                 <a
-                  href="/_RESUME_SRIKESAV.pdf"
+                  href="./resume.pdf"
                   className="
                     group
                     flex
@@ -235,12 +232,12 @@ export default function Contact() {
                     hover:shadow-[0_4px_20px_rgba(16,185,129,0.1)]
                   "
                 >
-                  <FaFileAlt className="text-2xl transition-transform duration-300 group-hover:scale-110" />
+                  <FaFileAlt aria-label="File" aria-hidden="true" className="text-2xl transition-transform duration-300 group-hover:scale-110" />
                   <span className="font-medium">Download Resume</span>
                 </a>
               </div>
 
-              {/* Status Indicator */}
+              
               <div
                 className="
                   mt-10

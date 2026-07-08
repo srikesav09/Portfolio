@@ -35,7 +35,7 @@ export default function CertificateCard({
           className="mt-6 inline-flex items-center gap-2 text-blue-400 hover:text-cyan-300 transition-colors"
         >
           View Certificate
-          <FaArrowRight className="text-sm" />
+          <FaArrowRight aria-hidden="true" className="text-sm" />
         </a>
       )}
     </Card>

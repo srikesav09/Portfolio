@@ -2,7 +2,6 @@ export default function BrowserMockup({ image, title }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-lg">
 
-      {/* Browser Header */}
       <div className="flex items-center justify-between border-b border-slate-800 px-4 py-3">
 
         <div className="flex gap-2">
@@ -19,6 +18,8 @@ export default function BrowserMockup({ image, title }) {
 
       <div className="overflow-hidden">
         <img
+          loading="lazy"
+          decoding="async"
           src={image}
           alt={title}
           className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
