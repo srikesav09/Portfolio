@@ -9,6 +9,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/layout/Footer";
 import { motion, useScroll } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -30,6 +31,7 @@ function App() {
       <Contact />
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
