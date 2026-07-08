@@ -18,10 +18,11 @@ export default function Navbar() {
   },[]);
 
   const navItems = [
-    "My Journey",
-    "Skills",
+    "Home",
     "Projects",
-    "Experience",
+    "Skills",
+    "Profile",
+    "Certifications",
     "Contact",
   ];
 
@@ -75,7 +76,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="./public/_RESUME_SRIKESAV.pdf">
+          <Button href="./resume.pdf">
             Resume
           </Button>
         </div>

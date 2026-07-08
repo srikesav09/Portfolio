@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
 
         <p className="mt-2">
-          Built with curiosity, consistency, and lots of coffee ☕
+          Always learning. Always building.
         </p>
       </div>
     </footer>
