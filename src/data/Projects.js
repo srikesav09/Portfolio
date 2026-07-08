@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Campus Lost & Found Portal",
     category: "Full Stack Web Application",
-    image: "/images/projects/campus.png",
+    image: "/images/project/campus.png",
 
     description:
       "A full-stack platform that enables students to report, search, and recover lost items within the campus through a clean and responsive interface.",
@@ -32,7 +32,7 @@ const projects = [
     id: 2,
     title: "Student CRUD API",
     category: "Backend API",
-    image: "/images/projects/student.png",
+    image: "/images/project/student.png",
 
     description:
       "RESTful backend API supporting complete CRUD operations with Express.js and MongoDB.",
@@ -58,7 +58,7 @@ const projects = [
     id: 3,
     title: "SilentSOS",
     category: "Embedded Systems",
-    image: "/images/projects/sos.png",
+    image: "/images/project/sos.png",
 
     description:
       "Offline emergency alert system built using Raspberry Pi Pico and MicroPython for reliable emergency signaling without internet connectivity.",
@@ -75,8 +75,8 @@ const projects = [
       "MicroPython",
     ],
 
-    github: "https://www.github.com/srikesav09/",
-    live: "",
+    github: "https://www.github.com/srikesav09/silent-sos",
+    live: "https://wokwi.com/projects/461846617350223873",
   },
 ];
 

@@ -18,7 +18,7 @@ export default function Card({
 
           ${
             hover
-              ? "hover:-translate-y-2 hover: border-blue-500 hover:shadow-blue-500/20"
+              ? "hover:-translate-y-2 hover:border-blue-500 hover:shadow-blue-500/20"
               : ""
           }
 
