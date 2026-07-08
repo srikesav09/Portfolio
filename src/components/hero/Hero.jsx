@@ -95,7 +95,7 @@ export default function Hero() {
         >
           <div className="relative">
             <ProfileCard />
-          </div> 
+          </div>
         </motion.div>
         </Container>
       </section>
