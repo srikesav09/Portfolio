@@ -7,7 +7,6 @@ import Profile from "./components/profile/Profile";
 import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/layout/Footer";
-import SectionWrapper from "./components/common/SectionWrapper";
 import { motion, useScroll } from "framer-motion";
 
 function App() {

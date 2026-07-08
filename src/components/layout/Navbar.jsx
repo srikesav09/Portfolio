@@ -85,7 +85,7 @@ export default function Navbar() {
           className="md:hidden text-2xl"
           onClick={()=> setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes aria-hidden="true"/> : <FaBars aria-hidden="true"/>}
         </button>
 
       </Container>
@@ -104,7 +104,7 @@ export default function Navbar() {
               </a>
           );})}
           <div className="p-6">
-            <Button href="/public/_RESUME_SRIKESAV.pdf">Resume</Button>
+            <Button href="./resume.pdf">Resume</Button>
           </div>
         </div>
       )

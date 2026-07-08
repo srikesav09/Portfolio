@@ -15,7 +15,10 @@ export default function ProfileCard() {
               duration: 4,
               repeat: Infinity
           }}
-          src="/images/profile.jpg"
+          alt="Srikesav M"
+          loading="eager"
+          decoding="async"
+          src="/images/profile.webp"
           className="
             w-72
             h-72

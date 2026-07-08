@@ -21,7 +21,8 @@ export default function SectionWrapper({
       }}
       viewport={{
         once: true,
-        amount: 0.2,
+        amount: 0.05,
+        margin: "-50px"
       }}
     >
       {children}

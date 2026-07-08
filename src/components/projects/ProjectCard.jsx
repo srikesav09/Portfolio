@@ -60,17 +60,17 @@ export default function ProjectCard({ project }) {
         <div className="mt-8 flex gap-4">
 
           {project.live && (
-            <Button href={project.live}>
-              <FaExternalLinkAlt />
+            <Button target="_blank" rel="noopener noreferrer" href={project.live}>
+              <FaExternalLinkAlt aria-hidden="true"/>
               Live Demo
             </Button>
           )}
 
-          <Button
+          <Button target="_blank" rel="noopener noreferrer"
             variant="outline"
             href={project.github}
           >
-            <FaGithub />
+            <FaGithub aria-hidden="true"/>
             GitHub
           </Button>
 
