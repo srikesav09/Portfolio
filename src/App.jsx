@@ -8,6 +8,7 @@ import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/layout/Footer";
 import { motion, useScroll } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -28,6 +29,7 @@ function App() {
       <Certifications />
       <Contact />
       <Footer />
+      <SpeedInsights />
     </>
   );
 }
