@@ -10,6 +10,8 @@ import Footer from "./components/layout/Footer";
 import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import Loader from "./components/common/Loader";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
       <Certifications />
       <Contact />
       <Footer />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
