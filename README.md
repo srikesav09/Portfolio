@@ -1,46 +1,37 @@
-# 🚀 Srikesav M - Portfolio Website
+# 🚀 Srikesav M | Portfolio
 
-A modern, responsive developer portfolio built using **React**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, skills, certifications, and professional profile.
+A modern, responsive portfolio website built using **React**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, technical skills, certifications, and experience as a Software Engineer and Full Stack Developer.
 
 ## 🌐 Live Demo
 
-🔗 https://your-portfolio.vercel.app
-
----
-
-## 📸 Preview
-
-> Add screenshots here after deployment.
-
-| Home | Projects | Contact |
-|------|----------|---------|
-| Screenshot | Screenshot | Screenshot |
+🔗 **https://portfolio-theta-nine-9zokujvsi5.vercel.app/**
 
 ---
 
 ## ✨ Features
 
-- Modern responsive UI
-- Smooth scroll navigation
-- Scroll reveal animations
-- Interactive project showcase
-- Skills categorized by technology
-- Professional profile section
-- Certifications
+- Modern and responsive UI
+- Smooth scrolling navigation
+- Interactive animations with Framer Motion
+- Fully responsive design
+- Professional project showcase
+- Categorized technical skills
+- Certifications section
 - Contact form powered by EmailJS
 - Resume download
-- GitHub & LinkedIn integration
+- SEO optimized
+- Open Graph & Twitter Card support
+- Reusable React components
 - Mobile-friendly navigation
-- Built with reusable React components
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
-- React 19
-- Tailwind CSS 4
+- React
+- Tailwind CSS
 - Framer Motion
 
 ### Libraries
@@ -55,69 +46,92 @@ A modern, responsive developer portfolio built using **React**, **Tailwind CSS**
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-```
+```text
 src
+│
 │
 ├── components
 │   ├── common
 │   ├── layout
 │   ├── hero
 │   ├── stats
-│   ├── projects
 │   ├── skills
+│   ├── projects_
 │   ├── profile
 │   ├── certifications
 │   └── contact
 │
 ├── data
 │
-├── assets
-│
 ├── App.jsx
 └── main.jsx
+
+public
+│
+├── favicon.svg
+├── og-image.webp
+└── resume.pdf
 ```
 
 ---
 
-## ⚙ Installation
+## 🚀 Getting Started
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/srikesav09/Portfolio.git
 ```
 
-Move into the project
+### Navigate to the project
 
 ```bash
 cd Portfolio
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
 ---
 
-## 🔑 Environment Variables
+## 🔧 Build for Production
 
-Create a `.env` file in the project root.
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root and add:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=YOUR_SERVICE_ID
-
 VITE_EMAILJS_TEMPLATE_ID=YOUR_TEMPLATE_ID
-
 VITE_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY
 ```
 
@@ -125,34 +139,72 @@ VITE_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY
 
 ## 📬 Contact Form
 
-The contact form is powered by **EmailJS**, allowing visitors to send messages directly from the website without requiring a backend server.
+The portfolio uses **EmailJS** to send messages directly from the contact form without requiring a backend server.
 
 ---
 
-## 🚀 Deployment
+## 🌟 Sections
 
-Deploy easily using **Vercel**
+- Hero
+- Highlights
+- Projects
+- Skills
+- Beyond the Code
+- Certifications
+- Contact
+- Footer
 
-```bash
-npm run build
-```
+---
 
-Then connect the repository to Vercel.
+## 📈 Performance
+
+The portfolio is optimized for:
+
+- Fast loading
+- Responsive layouts
+- SEO
+- Accessibility
+- Smooth animations
+- Clean component architecture
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I strengthened my understanding of:
+
+- React Component Architecture
+- Tailwind CSS
+- Responsive Web Design
+- Framer Motion Animations
+- EmailJS Integration
+- SEO Optimization
+- Open Graph Metadata
+- Modern UI/UX Principles
+- Deployment using Vercel
 
 ---
 
 ## 📬 Connect With Me
 
-GitHub
+**Portfolio**
+
+https://portfolio-theta-nine-9zokujvsi5.vercel.app/
+
+**GitHub**
 
 https://github.com/srikesav09
 
-LinkedIn
+**LinkedIn**
 
-https://linkedin.com/in/srikesav-m-53446b324
+https://www.linkedin.com/in/srikesav-m-53446b324/
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you like this project, consider giving it a star!
