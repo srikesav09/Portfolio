@@ -1,3 +1,5 @@
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react) ![Tailwind](https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss) ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite) ![License](https://img.shields.io/badge/License-MIT-green) ![Deployment](https://img.shields.io/badge/Deployment-Vercel-yellow?logo=vercel)
+
 # 🚀 Srikesav M | Portfolio
 
 A modern, responsive portfolio website built using **React**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, technical skills, certifications, and experience as a Software Engineer and Full Stack Developer.
