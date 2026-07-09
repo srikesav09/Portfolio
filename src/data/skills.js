@@ -19,6 +19,8 @@ import {
   SiPostman,
 } from "react-icons/si";
 
+import {TbApi} from "react-icons/tb";
+
 const skills = [
   {
     category: "Frontend",
@@ -34,6 +36,7 @@ const skills = [
     items: [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
+      { name: "REST APIs", icon: TbApi}
     ],
   },
   {
