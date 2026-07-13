@@ -1,125 +1,161 @@
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react) ![Tailwind](https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss) ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite) ![License](https://img.shields.io/badge/License-MIT-green) ![Deployment](https://img.shields.io/badge/Deployment-Vercel-yellow?logo=vercel)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20ECR-FF9900?logo=amazonaws)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
+![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?logo=githubactions)
+![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%26%20AWS-success?logo=vercel)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-# 🚀 Srikesav M | Portfolio
+# 🚀 Srikesav M | Developer Portfolio
 
-A modern, responsive portfolio website built using **React**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, technical skills, certifications, and experience as a Software Engineer and Full Stack Developer.
-
-## 🌐 Live Demo
-
-🔗 **https://portfolio-theta-nine-9zokujvsi5.vercel.app/**
+A modern, responsive, and cloud-deployed developer portfolio built with **React**, **Tailwind CSS**, and **Framer Motion**. This project showcases my technical skills, projects, certifications, and demonstrates an end-to-end deployment workflow using **Docker**, **Amazon ECR**, **AWS EC2**, and **GitHub Actions CI/CD**.
 
 ---
 
-## ✨ Features
+# 🌐 Live Demo
 
-- Modern and responsive UI
-- Smooth scrolling navigation
-- Interactive animations with Framer Motion
-- Fully responsive design
+### Portfolio
+
+👉 https://portfolio-theta-nine-9zokujvsi5.vercel.app/
+
+---
+
+# ✨ Features
+
+- Modern UI with responsive design
+- Smooth scrolling and animations using Framer Motion
 - Professional project showcase
-- Categorized technical skills
+- Technical skills section
 - Certifications section
 - Contact form powered by EmailJS
 - Resume download
 - SEO optimized
 - Open Graph & Twitter Card support
-- Reusable React components
+- Reusable component architecture
 - Mobile-friendly navigation
+- Dockerized production build
+- Automated CI/CD pipeline using GitHub Actions
+- Cloud deployment on AWS EC2
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
 - React
 - Tailwind CSS
 - Framer Motion
 
-### Libraries
+## Libraries
 
 - React Icons
 - EmailJS
 - React Hot Toast
 
-### Deployment
+## DevOps
+
+- Docker
+- Nginx
+- Docker Compose
+- GitHub Actions
+
+## Cloud
+
+- Amazon EC2
+- Amazon Elastic Container Registry (ECR)
+- AWS CLI
+- IAM
+
+## Deployment
 
 - Vercel
+- AWS EC2
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
-src
+Portfolio
 │
+├── .github
+│   └── workflows
+│       └── deploy.yml
 │
-├── components
-│   ├── common
-│   ├── layout
-│   ├── hero
-│   ├── stats
-│   ├── skills
-│   ├── projects_
-│   ├── profile
-│   ├── certifications
-│   └── contact
+├── public
+│   ├── favicon.svg
+│   ├── og-image.webp
+│   └── resume.pdf
 │
-├── data
+├── src
+│   ├── components
+│   │   ├── common
+│   │   ├── layout
+│   │   ├── hero
+│   │   ├── stats
+│   │   ├── skills
+│   │   ├── projects
+│   │   ├── profile
+│   │   ├── certifications
+│   │   └── contact
+│   │
+│   ├── data
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── App.jsx
-└── main.jsx
-
-public
-│
-├── favicon.svg
-├── og-image.webp
-└── resume.pdf
+├── Dockerfile
+├── docker-compose.yml
+├── nginx.conf
+├── .dockerignore
+├── package.json
+└── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/srikesav09/Portfolio.git
 ```
 
-### Navigate to the project
+## Navigate into the Project
 
 ```bash
 cd Portfolio
 ```
 
-### Install dependencies
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Start the development server
+## Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Visit
 
-```text
+```
 http://localhost:5173
 ```
 
 ---
 
-## 🔧 Build for Production
+# 🔧 Production Build
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+Preview
 
 ```bash
 npm run preview
@@ -127,9 +163,78 @@ npm run preview
 
 ---
 
-## 🔐 Environment Variables
+# 🐳 Docker Deployment
 
-Create a `.env` file in the project root and add:
+## Build Image
+
+```bash
+docker build -t portfolio .
+```
+
+## Run Container
+
+```bash
+docker run -d -p 8080:80 portfolio
+```
+
+Visit
+
+```
+http://localhost:8080
+```
+
+---
+
+# ☁ AWS Deployment
+
+This project is also deployed using AWS services.
+
+Deployment workflow:
+
+```
+GitHub
+    │
+    ▼
+GitHub Actions
+    │
+    ▼
+Docker Build
+    │
+    ▼
+Amazon ECR
+    │
+    ▼
+AWS EC2
+    │
+    ▼
+Docker Container
+    │
+    ▼
+Nginx
+    │
+    ▼
+Live Portfolio
+```
+
+---
+
+# 🔄 CI/CD Pipeline
+
+Every push to the **main** branch automatically:
+
+- Builds a Docker image
+- Pushes the image to Amazon ECR
+- Connects to AWS EC2
+- Pulls the latest image
+- Restarts the portfolio container
+
+No manual deployment is required.
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file.
 
 ```env
 VITE_EMAILJS_SERVICE_ID=YOUR_SERVICE_ID
@@ -139,13 +244,13 @@ VITE_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY
 
 ---
 
-## 📬 Contact Form
+# 📬 Contact Form
 
-The portfolio uses **EmailJS** to send messages directly from the contact form without requiring a backend server.
+The contact form is integrated with **EmailJS**, allowing visitors to send messages directly without requiring a backend server.
 
 ---
 
-## 🌟 Sections
+# 📄 Portfolio Sections
 
 - Hero
 - Highlights
@@ -158,55 +263,62 @@ The portfolio uses **EmailJS** to send messages directly from the contact form w
 
 ---
 
-## 📈 Performance
+# 📈 Performance & Best Practices
 
-The portfolio is optimized for:
-
-- Fast loading
-- Responsive layouts
-- SEO
-- Accessibility
-- Smooth animations
-- Clean component architecture
+- Responsive Design
+- SEO Optimized
+- Open Graph Metadata
+- Twitter Card Support
+- Lazy Loaded Assets
+- Component-Based Architecture
+- Docker Multi-stage Build
+- Nginx Production Server
+- Automated Cloud Deployment
 
 ---
 
-## 📚 Learning Outcomes
+# 📚 Learning Outcomes
 
-Through this project, I strengthened my understanding of:
+This project helped me strengthen my understanding of:
 
 - React Component Architecture
 - Tailwind CSS
-- Responsive Web Design
-- Framer Motion Animations
+- Responsive UI Design
+- Framer Motion
 - EmailJS Integration
-- SEO Optimization
-- Open Graph Metadata
-- Modern UI/UX Principles
-- Deployment using Vercel
+- Docker
+- Nginx
+- AWS EC2
+- Amazon ECR
+- GitHub Actions
+- CI/CD Pipelines
+- Linux Server Deployment
+- Modern Deployment Strategies
 
 ---
 
-## 📬 Connect With Me
+# 📬 Connect With Me
 
-**Portfolio**
+### Portfolio
 
 https://portfolio-theta-nine-9zokujvsi5.vercel.app/
 
-**GitHub**
+### GitHub
 
 https://github.com/srikesav09
 
-**LinkedIn**
+### LinkedIn
 
 https://www.linkedin.com/in/srikesav-m-53446b324/
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
-⭐ If you like this project, consider giving it a star!
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
