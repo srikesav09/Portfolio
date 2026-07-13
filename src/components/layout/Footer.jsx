@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
 
         <p className="mt-2">
-          Built with React • Tailwind CSS • Framer Motion
+          Built by srikesav M
         </p>
       </div>
     </footer>
