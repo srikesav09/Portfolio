@@ -1,6 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
-import Stats from "./components/stats/Stats";
+import Stats from "./components/stats/Stats"; 
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects_";
 import Profile from "./components/profile/Profile";
@@ -14,6 +14,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
+
+  const RandomVar=0;
 
   const { scrollYProgress } = useScroll();
   const [loading, setLoading] = useState(true);
